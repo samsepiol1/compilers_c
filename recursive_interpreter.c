@@ -1,11 +1,14 @@
 enum token{EOF, ID, NUM, PLUS, MINUS};
+//Token Eval para Identificadores
 union tokenval{string id, int num};
 
 enum token tok;
 union tokenval tokval;
 
+//Verifica se já existe o identificador
 int lookup(String id){};
 
+//Faz a comparação com valores encontrados na tabela: caso do tipo num== tokval.num
 int F_follow[] = {PLUS, TIMES, RPAREN, EOF, -1};
 if F(void) {switch (tok)
 {
